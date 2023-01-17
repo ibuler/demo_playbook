@@ -1,0 +1,15 @@
+- hosts: ubuntu,website
+  gather_facts: no
+  tasks:
+#    - name: ping
+#      ping:
+#
+    #- name: Run it
+    #  #shell: whoami
+    #  shell: echo {{ ansible_password }}
+    #  register: stdout
+
+    - name: Debug
+      debug:
+        var: ansible_password
+
